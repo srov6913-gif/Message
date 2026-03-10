@@ -84,23 +84,20 @@
             const response1 = document.getElementById('response1');
             response1.innerHTML = '<div class="message">Wonderful! <span class="heart">❤️</span></div>';
             response1.classList.remove('hidden');
-            setTimeout(() => {
-                response1.classList.add('hidden');
-                document.getElementById('question2').classList.remove('hidden');
-            }, 2000);
+            document.getElementById('question2').classList.remove('hidden');
         }
 
         function handleNo1() {
             document.getElementById('question1').classList.add('hidden');
             const response1 = document.getElementById('response1');
-            response1.innerHTML = '<div class="message">You hate me Aysha? Superb, I feel the same. Please don\'t text me.</div>';
+            response1.innerHTML = '<div class="message">You hate me? Superb, I feel the same. Please don\'t text me.</div>';
             response1.classList.remove('hidden');
         }
 
         function handleYes2() {
             document.getElementById('question2').classList.add('hidden');
             const response2 = document.getElementById('response2');
-            response2.innerHTML = '<div class="message">Nice! I\'m glad Aysha, you want to see me happy. I\'d appreciate it if you don\'t contact me anymore.</div>';
+            response2.innerHTML = '<div class="message">Nice! I\'m glad Aysha,you want to see me happy. I\'d appreciate it if you don\'t contact me anymore.</div>';
             response2.classList.remove('hidden');
         }
 
@@ -113,3 +110,4 @@
     </script>
 </body>
 </html>
+
